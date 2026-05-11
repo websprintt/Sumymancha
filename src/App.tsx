@@ -417,11 +417,11 @@ const Services = () => {
               <img src={s.image} alt={s.title} className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700" loading="lazy" />
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent" />
               
-              <div className="absolute bottom-10 left-10 right-10">
+              <div className="absolute bottom-6 left-6 right-6 sm:bottom-10 sm:left-10 sm:right-10">
                 <div className="w-14 h-14 bg-brand-orange text-white rounded-xl flex items-center justify-center mb-6 group-hover:rotate-12 transition-transform duration-300">
                   {s.icon}
                 </div>
-                <h3 className="text-3xl font-black mb-4 uppercase tracking-tighter">{s.title}</h3>
+                <h3 className="text-xl md:text-2xl font-black mb-4 uppercase tracking-tighter">{s.title}</h3>
                 <p className="text-gray-400 group-hover:text-white transition-colors duration-300 leading-relaxed">
                   {s.desc}
                 </p>
