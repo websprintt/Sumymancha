@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, sans-serif;
+  --color-brand-orange: #FF6B00;
+  --color-brand-black: #0A0A0A;
+  --color-brand-white: #FFFFFF;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-white text-brand-black antialiased overflow-x-hidden;
+  }
+}
+
+:root {
+  --brand-orange: #FF6B00;
+  --brand-black: #0A0A0A;
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-black to-gray-600;
+}
+
+.orange-shadow {
+  box-shadow: 0 10px 40px -10px rgba(255, 107, 0, 0.3);
+}
+
+.glass-card {
+  @apply bg-white/80 backdrop-blur-md border border-gray-100;
+}
